@@ -1,0 +1,5 @@
+mysql/initdb/*
+!mysql/initdb/.gitkeep
+mysql/data/*
+!mysql/data/.gitkeep
+.env
