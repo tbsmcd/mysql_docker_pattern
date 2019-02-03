@@ -1,4 +1,4 @@
-# MySQL Docker Pattern
+# MySQL Docker Pattern (With phpMyAdmin)
 ## What's this?
 This is a pattern for easily launching MySQL (for local development environment). It is easier than using SQLite.
 
