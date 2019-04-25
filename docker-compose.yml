@@ -3,9 +3,9 @@ mysql:
   image: mysql:${MYSQL_VERSION}
   command: mysqld --character-set-server=${CHARASET} --collation-server=${COLLATION}
   environment:
-    - MYSQL_ROOT_PASSWORD={MYSQL_ROOT_PASSWORD}
-    - MYSQL_USER={MYSQL_USER}
-    - MYSQL_PASSWORD={MYSQL_PASSWORD}
+    - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    - MYSQL_USER=${MYSQL_USER}
+    - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     - MYSQL_DATABASE=${DATABASE}
   ports:
     - 3333:3306
@@ -20,7 +20,7 @@ phpmyadmin:
     - PMA_ARBITRARY=1
     - PMA_HOST=mysql
     - PMA_USER=root
-    - PMA_PASSWORD={MYSQL_ROOT_PASSWORD}
+    - PMA_PASSWORD=${MYSQL_ROOT_PASSWORD}
   links:
     - mysql
   ports:
